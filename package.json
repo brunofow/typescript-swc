@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "build": "swc src -d dist",
-    "build-dev": "yarn build && NODE_ENV=development node --inspect --experimental-json-modules dist/index.js",
-    "dev": "nodemon --ext ts --exec \"yarn build-dev\"",
-    "start": "yarn build && NODE_ENV=production node --experimental-json-modules dist/index.js"
+    "build-dev": "pnpm build && NODE_ENV=development node --inspect --experimental-json-modules dist/index.js",
+    "dev": "nodemon --ext ts --exec \"pnpm build-dev\"",
+    "start": "pnpm build && NODE_ENV=production node --experimental-json-modules dist/index.js"
   },
   "keywords": [],
   "author": "",
