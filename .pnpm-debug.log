@@ -1,0 +1,107 @@
+{
+  "0 debug pnpm:scope": {
+    "selected": 1
+  },
+  "1 debug pnpm:package-manifest": {
+    "initial": {
+      "name": "typescript-swc",
+      "version": "1.0.0",
+      "description": "",
+      "main": "index.js",
+      "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+      },
+      "keywords": [],
+      "author": "",
+      "license": "ISC"
+    },
+    "prefix": "/home/brunofow/Dev/typescript-swc"
+  },
+  "2 debug pnpm:context": {
+    "currentLockfileExists": false,
+    "storeDir": "/home/brunofow/.local/share/pnpm/store/v3",
+    "virtualStoreDir": "/home/brunofow/Dev/typescript-swc/node_modules/.pnpm"
+  },
+  "3 debug pnpm:stage": {
+    "prefix": "/home/brunofow/Dev/typescript-swc",
+    "stage": "resolution_started"
+  },
+  "4 debug pnpm:update-check": {
+    "currentVersion": "7.1.8",
+    "latestVersion": "7.5.0"
+  },
+  "5 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/nodemon/2.0.19",
+    "wanted": {
+      "dependentId": ".",
+      "name": "nodemon",
+      "rawSpec": "latest"
+    }
+  },
+  "6 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/nodemon/2.0.19",
+    "requester": "/home/brunofow/Dev/typescript-swc",
+    "status": "resolved"
+  },
+  "7 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@types/node/18.0.3",
+    "wanted": {
+      "dependentId": ".",
+      "name": "@types/node",
+      "rawSpec": "latest"
+    }
+  },
+  "8 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@types/node/18.0.3",
+    "requester": "/home/brunofow/Dev/typescript-swc",
+    "status": "resolved"
+  },
+  "9 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/typescript/4.7.4",
+    "wanted": {
+      "dependentId": ".",
+      "name": "typescript",
+      "rawSpec": "latest"
+    }
+  },
+  "10 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/typescript/4.7.4",
+    "requester": "/home/brunofow/Dev/typescript-swc",
+    "status": "resolved"
+  },
+  "11 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/@types/node/18.0.3",
+    "size": 314471,
+    "status": "started"
+  },
+  "12 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/nodemon/2.0.19",
+    "size": 57433,
+    "status": "started"
+  },
+  "13 error pnpm": {
+    "code": "ERR_PNPM_FETCH_404",
+    "hint": "t-DD is not in the npm registry, or you have no permission to fetch it.\n\nNo authorization header was set for the request.",
+    "request": {
+      "url": "https://registry.npmjs.org/t-DD"
+    },
+    "response": {
+      "size": 0
+    },
+    "pkgName": "t-DD",
+    "spec": {
+      "fetchSpec": "latest",
+      "name": "t-DD",
+      "type": "tag"
+    },
+    "pkgsStack": [],
+    "err": {
+      "name": "pnpm",
+      "message": "GET https://registry.npmjs.org/t-DD: Not Found - 404",
+      "code": "ERR_PNPM_FETCH_404",
+      "stack": "pnpm: GET https://registry.npmjs.org/t-DD: Not Found - 404\n    at RetryOperation._fn (/snapshot/dist/pnpm.cjs)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)"
+    }
+  }
+}
